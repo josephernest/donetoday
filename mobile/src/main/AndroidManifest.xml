@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.als.donetoday">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/> <!-- to reactivate reminders, normal -->
+
+    <application
+        android:name="com.als.donetoday.LifeLogApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <activity
+            android:name="com.als.donetoday.LifeLogListActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.als.donetoday.LifeLogEditActivity"
+            android:theme="@style/AppTheme.DialogWhenLarge"/>
+
+        <activity
+            android:name="com.als.donetoday.preferences.PreferenceActivity"
+            android:label="@string/action_settings"/>
+
+        <receiver android:name="com.als.donetoday.reminder.ReminderReceiver"/>
+        <receiver android:name="com.als.donetoday.reminder.UpdateReminderReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.als.donetoday.db.LifeLogContentProvider"
+            android:authorities="${lifeLogAuthority}"
+            android:exported="false"
+            android:grantUriPermissions="false"
+            android:icon="@drawable/ic_app"
+            android:label="@string/app_name"/>
+
+        <!-- logging preferences -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${filesAuthority}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths"/>
+        </provider>
+
+    </application>
+</manifest>

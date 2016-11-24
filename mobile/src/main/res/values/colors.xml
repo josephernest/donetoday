@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/ttdGreenMiddle</color>
+    <color name="colorPrimaryDark">@color/ttdGreenDark</color>
+    <color name="colorAccent">@color/ttdRedLight</color>
+    <color name="ctrlHighlight">#40000000</color><!-- this would change button selection etc. -->
+    <color name="ctrlActivated">@color/ttdGreenMiddle</color>
+
+    <color name="preference_accent">@color/colorAccent</color><!-- see https://github.com/Gericop/Android-Support-Preference-V7-Fix-->
+
+
+    <color name="ttdRed">#FFcc0000</color>
+    <color name="ttdRedLight">#ffe80000</color>
+    <color name="ttdOrange">#FFff9900</color>
+    <color name="ttdYellow">#FFffdd00</color>
+    <color name="ttdGreenLighter">#ffcdde00</color>
+    <color name="ttdGreenLight">#FFbbcc00</color>
+    <color name="ttdGreenMiddle">#FF88bb00</color>
+    <color name="ttdGreenDark">#FF669900</color>
+    <color name="ttdGreenDarker">#ff568700</color>
+    <color name="ttdGreenDarkerEven">#ff3a6900</color>
+    <color name="ttdGreenDarkest">#ff193200</color>
+
+    <color name="ttdBlue">#FF0099cc</color>
+    <color name="ttdPurple">#FF9933cc</color>
+
+</resources>

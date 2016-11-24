@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.als.donetoday.preferences.TimePreference
+        android:defaultValue="@string/DefaultReminderTime_Default"
+        android:dialogTitle="@string/DefaultReminderTime_Title"
+        android:key="DoneTodayReminderTime"
+        android:negativeButtonText="@android:string/cancel"
+        android:positiveButtonText="@android:string/ok"
+        android:summary="@string/DefaultReminderTime_Summary"
+        android:title="@string/DefaultReminderTime_Title">
+        <extra
+            android:name="requestCode"
+            android:value="2"/>
+    </com.als.donetoday.preferences.TimePreference>
+
+    <PreferenceCategory android:title="@string/Pref_Section_Logging">
+        <CheckBoxPreference
+            android:defaultValue="@bool/Pref_LogToFile_Default"
+            android:key="@string/Pref_LogToFile_Key"
+            android:summary="@string/Pref_LogToFile_Summary_Inactive"
+            android:title="@string/Pref_LogToFile_Title" />
+        <Preference
+            android:key="@string/Pref_DeleteLogFile_Key"
+            android:title="@string/Pref_DeleteLogFile_Title" />
+        <Preference
+            android:key="@string/Pref_ShareLogFile_Key"
+            android:title="@string/Pref_ShareLogFile_Title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,59 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Done Today</string>
+    <string name="app_description" translatable="false">@string/what_did_you_do</string>
+    <string name="log_tag" translatable="false">@string/app_name</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_lifelogentry_list">LifeLogEntries</string>
+    <string name="title_lifelogentry_detail">LifeLogEntry Detail</string>
+    <string name="action_save">Save</string>
+    <string name="action_cancel" translatable="false">@android:string/cancel</string>
+    <string name="action_delete">Delete</string>
+    <string name="what_did_you_do">What did you do?</string>
+    <string name="Error_CouldNotSaveEntry">Could not save the entry: %s</string>
+    <string name="actionmode_title">"%d selected"</string>
+    <string name="action_share">Share</string>
+
+    <!-- Reminder Time -->
+    <string name="DefaultReminderTime_Title">Reminder Time</string>
+    <string name="DefaultReminderTime_Summary" translatable="false">{0}</string>
+    <string name="DefaultReminderTime_Default" translatable="false">18:00</string>
+    <string name="DefaultReminderTime_NoDefault">No time</string>
+
+    <!-- Logging preferences -->
+    <string name="Pref_Section_Logging">Logging</string>
+
+    <bool translatable="false" name="Pref_LogToFile_Default">false</bool>
+    <string translatable="false" name="Pref_LogToFile_Key">prefLogToFile</string>
+    <string name="Pref_LogToFile_Summary_Active">Log messages are written to %s.\nPlease
+        note that the log file is never truncated and may grow indefinitely.
+        Thus, you should not activate this option permanently and may want to delete
+        the log file from time to time.</string>
+    <string name="Pref_LogToFile_Summary_Inactive">Log messages are only written to the system log</string>
+    <string name="Pref_LogToFile_Title">Write log messages to a file</string>
+
+    <string name="Pref_DeleteLogFile_Title">Delete log file</string>
+    <string name="Pref_DeleteLogFile_Deleted">Log file deleted</string>
+    <string name="Pref_DeleteLogFile_CouldNotDelete">Could not delete the log file</string>
+    <string translatable="false" name="Pref_DeleteLogFile_Key">prefDeleteLogFile</string>
+
+    <string name="Pref_ShareLogFile_Title">Share log file</string>
+    <string name="Pref_ShareLogFile_NoFile">There is no log file</string>
+    <string translatable="false" name="Pref_ShareLogFile_Key">prefShareLogFile</string>
+
+    <string name="ShareLogFile_Mail_Address" translatable="false">support@refined-apps.com</string>
+    <string name="ShareLogFile_Mail_Subject">Log file of app %s</string>
+    <string name="ShareLogFile_ShareWith">Share with</string>
+    <string name="ShareLogFile_FileCantBeShared">The log file cannott be shared</string>
+
+    <string name="ShareLogFile_NoSharingAppFound">No app found to share the log file</string>
+
+
+    <!-- FragmentHeadlessDrawerLogic -->
+    <string name="DrawerLogic_NavigationDrawerOpen">Open the navigation drawer</string>
+    <string name="DrawerLogic_NavigationDrawerClose">Close the navigation drawer</string>
+
+    <string name="action_about">About</string>
+    <string name="title_about">About %s</string>
+
+
+</resources>

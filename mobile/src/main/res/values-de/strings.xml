@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Done Today</string>
+
+
+    <string name="action_settings">Einstellungen</string>
+    <string name="title_lifelogentry_list">LifeLogEntries</string>
+    <string name="title_lifelogentry_detail">LifeLogEntry Detail</string>
+    <string name="action_save">Speichern</string>
+
+    <string name="action_delete">Löschen</string>
+    <string name="what_did_you_do">Was haben Sie heute getan?</string>
+    <string name="Error_CouldNotSaveEntry">Konnte den Eintrag nicht speichern: %s</string>
+    <string name="actionmode_title">"%d ausgewählt"</string>
+    <string name="action_share">Teilen</string>
+
+    <!-- Reminder Time -->
+    <string name="DefaultReminderTime_Title">Erinnerung</string>
+
+
+    <string name="DefaultReminderTime_NoDefault">Ohne Zeit</string>
+
+    <!-- Logging preferences -->
+    <string name="Pref_Section_Logging">Protokollierung</string>
+
+
+
+    <string name="Pref_LogToFile_Summary_Active">Protokollmeldungen werden nach %s geschrieben.\nBitte
+        beachten Sie, dass die Protokolldate nie gekürzt wird und daher beliebig groß werden kann.
+        Deshalb sollten Sie diese Option nicht dauerhaft aktivieren und evtl. von Zeit zu Zeit die
+        Protokolldatei löschen.</string>
+    <string name="Pref_LogToFile_Summary_Inactive">Protokollmeldungen werden nur ins Systemprotokoll geschrieben</string>
+    <string name="Pref_LogToFile_Title">Status- und Fehlermeldungen in eine Datei schreiben</string>
+
+    <string name="Pref_DeleteLogFile_Title">Protokolldatei löschen</string>
+    <string name="Pref_DeleteLogFile_Deleted">Protokolldatei gelöscht</string>
+    <string name="Pref_DeleteLogFile_CouldNotDelete">Protokolldatei konnte nicht gelöscht werden</string>
+
+
+    <string name="Pref_ShareLogFile_Title">Protokolldatei teilen</string>
+    <string name="Pref_ShareLogFile_NoFile">Es gibt noch keine Protokolldatei</string>
+
+
+
+    <string name="ShareLogFile_Mail_Subject">Protokolldatei der App %s</string>
+    <string name="ShareLogFile_ShareWith">Freigeben über</string>
+    <string name="ShareLogFile_FileCantBeShared">Die Protokolldatei kann nicht geteilt werden</string>
+
+    <string name="ShareLogFile_NoSharingAppFound">Keine App gefunden, die die Protokolldatei teilen kann</string>
+
+
+    <!-- FragmentHeadlessDrawerLogic -->
+    <string name="DrawerLogic_NavigationDrawerOpen">Navigation öffnen</string>
+    <string name="DrawerLogic_NavigationDrawerClose">Navigation schließen</string>
+
+    <string name="action_about">Über</string>
+    <string name="title_about">Über %s</string>
+
+</resources>

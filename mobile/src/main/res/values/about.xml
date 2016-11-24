@@ -1,0 +1,119 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="text_about" translatable="false"><![CDATA[<html>
+<HEAD>
+<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8"/>
+
+</HEAD>
+
+<body bgcolor="#ffffff">
+
+<H2>{app-name}, Version {app-version}</H2>
+
+    <a href="market://search?q=pub:Dr. Achim Leubner">More apps</a>
+	<p/>
+
+	Support: <a	href="mailto:support@refined-apps.com?subject={app-name-encoded}%20-%20Feedback">support@refined-apps.com</a><br />
+    <p/>
+
+	Web Site: <A HREF="http://www.refined-apps.com/">www.refined-apps.com</A>
+	<p/>
+
+	Copyright &copy; Dr. Achim Leubner<br /> All rights reserved.
+
+
+<H3>License Agreement</H3>
+
+<OL>
+<LI> By accepting this license agreement and/or by using {app-name}, you agree to be bound by these terms.
+<LI> Under these terms, the party ("You") who purchased and uses this product is granted a license to run {app-name} in binary form.
+<LI> You are not allowed to copy, distribute, decompile or modify {app-name} or to derive other products from it without prior
+    explicit permission by the author.
+<LI>THIS SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+    WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+    MERCHANTABILITY AND FITNESS AS FAR AS THEY CAN BE EXCLUDED BY APPLICABLE LAW.
+    IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+    ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+    WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+    ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+    OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+</OL>
+
+<h4>Third-Party Licenses</h4>
+
+    <H5>Android-Support-Preference-V7-Fix</H5>
+
+        Android-Support-Preference-V7-Fix comes from
+        <a href="https://github.com/Gericop/Android-Support-Preference-V7-Fix">https://github.com/Gericop/Android-Support-Preference-V7-Fix</a>,
+        with a mixture of
+        <a href="https://github.com/Gericop/Android-Support-Preference-V7-Fix/blob/master/LICENSE">Apache and public domain license</a>.
+
+<!--
+    <H5>Jackson</H5>
+
+        From <a href="https://github.com/FasterXML/jackson">https://github.com/FasterXML/jackson</a> comes Jackson.
+        Version 2 is licensed under <a href="http://wiki.fasterxml.com/JacksonLicensing">Apache 2.0</a>.
+
+    <H5>jackson-datatype-threetenbp</H5>
+
+        jackson-datatype-threetenbp is from <a href="https://github.com/joschi/jackson-datatype-threetenbp">https://github.com/joschi/jackson-datatype-threetenbp</a>,
+        licensed under <a href="https://github.com/joschi/jackson-datatype-threetenbp/blob/master/LICENSE.txt">Apache 2.0</a>.
+-->
+    <H5>ThreeTen Android Backport</H5>
+
+        ThreeTen Android Backport is available from <a href="https://github.com/JakeWharton/ThreeTenABP">https://github.com/JakeWharton/ThreeTenABP</a>,
+         under <a href="https://github.com/JakeWharton/ThreeTenABP/blob/master/LICENSE.txt">ApacheLicense, Version 2.0</a>.
+
+         It\'s based on <a href="http://www.threeten.org/threetenbp/">http://www.threeten.org/threetenbp/</a> with
+         <a href="http://www.threeten.org/threetenbp/license.html">BSD 3-clause License</a>.
+
+    <H5>Material Drawer, Fast Adapter</H5>
+
+        Mike Penz created the Material Drawer and Fast Adapter libraries, available via
+        <a href="https://github.com/mikepenz/MaterialDrawer">https://github.com/mikepenz/MaterialDrawer</a> and
+        <a href="https://github.com/mikepenz/FastAdapter">https://github.com/mikepenz/FastAdapter</a>
+
+        under <a href="https://github.com/mikepenz/MaterialDrawer/blob/develop/LICENSE">Apache License, Version 2.0</a>.
+
+    <H5>Sticky Headers Recyclerview</H5>
+
+        We use the Sticky Headers Recyclerview library from
+        <a href="https://github.com/timehop/sticky-headers-recyclerview">https://github.com/timehop/sticky-headers-recyclerview</a>
+        under <a href="https://github.com/timehop/sticky-headers-recyclerview/blob/master/LICENSE">Apache License, Version 2.0</a>.
+
+    <H5>Better Pickers</H5>
+
+        The Better Pickers library is available from
+        <a href="https://github.com/derekbrameyer/android-betterpickers">https://github.com/derekbrameyer/android-betterpickers</a>
+        under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.
+
+    <H5>Nine Old Androids</H5>
+
+        Better Pickers also uses Nine Old Androids, available from
+        <a href="https://github.com/JakeWharton/NineOldAndroids">https://github.com/JakeWharton/NineOldAndroids</a>
+        under <a href="https://github.com/JakeWharton/NineOldAndroids/blob/master/LICENSE.txt">Apache License, Version 2.0</a> too.
+
+    <H5>Google Play Services</H5>
+
+        For the Google Play Services, see
+        <a href="http://developer.android.com/google/play-services/index.html">http://developer.android.com/google/play-services/index.htm</a>.
+        <a href="license_google_play_services.html">License.</a>
+
+    <H5>Android Support Libraries</H5>
+
+        For the Android Support Libraries, see
+        <a href="http://developer.android.com/tools/support-library/index.html">http://developer.android.com/tools/support-library/index.html</a>.
+        The support libraries are licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>
+
+    <H5>Material Design Icons</H5>
+
+        See <a href="https://github.com/google/material-design-icons">https://github.com/google/material-design-icons</a>. The icon set is licensed
+        under <a href="http://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>.
+
+    <H5>Unsplash.com</H5>
+
+        Some of the toolbar images are from unsplash.com. Unsplash.com publishes high-res photos under CC0 license, see <a href="https://unsplash.com/license">https://unsplash.com/license</a>.
+
+</body>
+</html>]]></string>
+</resources>

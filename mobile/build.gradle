@@ -1,0 +1,149 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+    defaultConfig {
+        applicationId "com.als.donetoday"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 3
+        versionName "0.003-dev"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        resConfigs "en", "de", "fr"
+
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('../releaseKeys.jks')
+            keyAlias 'releaseKey'
+        }
+    }
+
+    buildTypes {
+        debug {
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//            minifyEnabled true
+//            useProguard true
+        }
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            minifyEnabled true
+            useProguard true
+            shrinkResources true
+            signingConfig signingConfigs.release
+        }
+    }
+
+    productFlavors {
+        free {
+            applicationId "com.als.donetoday.free"
+
+            def filesAuthorityValue = applicationId + ".files"
+            buildConfigField "String", "FILES_AUTHORITY", "\"${filesAuthorityValue}\""
+
+            def lifeLogAuthorityValue = applicationId + ".lifelog"
+            buildConfigField "String", "LIFE_LOG_AUTHORITY", "\"${lifeLogAuthorityValue}\""
+
+            manifestPlaceholders = [lifeLogAuthority: lifeLogAuthorityValue, filesAuthority: filesAuthorityValue]
+        }
+        pro {
+            applicationId "com.als.donetoday.pro"
+
+            def filesAuthorityValue = applicationId + ".files"
+            buildConfigField "String", "FILES_AUTHORITY", "\"${filesAuthorityValue}\""
+
+            def lifeLogAuthorityValue = applicationId + ".lifelog"
+            buildConfigField "String", "LIFE_LOG_AUTHORITY", "\"${lifeLogAuthorityValue}\""
+
+            manifestPlaceholders = [lifeLogAuthority: lifeLogAuthorityValue, filesAuthority: filesAuthorityValue]
+        }
+    }
+
+//    packagingOptions {
+//        exclude 'META-INF/LICENSE'
+//    }
+
+    lintOptions {
+        checkReleaseBuilds true
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    // wearApp project(':wear')
+
+    // https://github.com/JakeWharton/ThreeTenABP
+
+    // https://docs.oracle.com/javase/8/docs/api/java/time/package-summary.html
+    compile 'com.jakewharton.threetenabp:threetenabp:1.0.4'
+    // https://github.com/FasterXML/jackson
+
+    // compile 'com.fasterxml.jackson.core:jackson-databind:2.7.0'
+
+    //    androidTestCompile 'com.fasterxml.jackson.core:jackson-databind:2.7.0'
+
+    // // compile 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.7.0'
+
+    // https://github.com/joschi/jackson-datatype-threetenbp
+
+    //    compile('com.github.joschi.jackson:jackson-datatype-threetenbp:2.6.4') {
+
+    //        exclude group: 'org.threeten'
+
+    //    }
+
+    //    androidTestCompile('com.github.joschi.jackson:jackson-datatype-threetenbp:2.6.4') {
+
+    //        exclude group: 'org.threeten'
+
+    //    }
+
+    // https://github.com/mikepenz/MaterialDrawer
+    compile('com.mikepenz:materialdrawer:5.7.0@aar') {
+        transitive = true
+    }
+    // https://github.com/mikepenz/FastAdapter
+    compile 'com.mikepenz:fastadapter-extensions:2.0.0@aar'
+    //https://github.com/timehop/sticky-headers-recyclerview
+
+    //original dependency:
+    compile 'com.timehop.stickyheadersrecyclerview:library:0.4.3@aar'
+    //customized version to allow minimal header animation
+
+    // compile 'com.mikepenz.thirdparty:stickyheadersrecyclerview:0.4.4-SNAPSHOT@aar'
+
+    // https://github.com/code-troopers/android-betterpickers
+    compile 'com.code-troopers.betterpickers:library:3.0.1'
+
+    def supportVersion = '25.0.1'
+    compile "com.android.support:appcompat-v7:${supportVersion}"
+    compile "com.android.support:design:${supportVersion}"
+    compile "com.android.support:support-v4:${supportVersion}"
+    compile "com.android.support:recyclerview-v7:${supportVersion}"
+    compile "com.android.support:cardview-v7:${supportVersion}"
+    //  compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+
+    // see https://github.com/Gericop/Android-Support-Preference-V7-Fix,
+
+    // https://plus.google.com/+AndroidDevelopers/posts/9kZ3SsXdT2T
+
+    // https://code.google.com/p/android/issues/detail?id=183376
+
+    // http://stackoverflow.com/questions/32070670/preferencefragmentcompat-requires-preferencetheme-to-be-set
+
+    // supportPreferenceV7 = "com.android.support:preference-v7:${supportLibrary}"
+    compile 'com.takisoft.fix:preference-v7:25.0.1.0'
+    compile 'com.google.android.gms:play-services-base:10.0.0'
+    testCompile 'junit:junit:4.12'
+}

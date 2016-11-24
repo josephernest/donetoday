@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="PreferenceFixTheme.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <!--<item name="colorPrimaryDark">@android:color/transparent</item>-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/ctrlHighlight</item>
+        <item name="colorControlActivated">@color/ctrlActivated</item>
+
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar"/>
+    <style name="AppTheme.AppBarOverlay.Dark" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="AppTheme.DialogWhenLarge" parent="Theme.AppCompat.Light.DialogWhenLarge" >
+        <!--<item name="windowActionModeOverlay">true</item>-->
+        <item name="windowNoTitle">true</item>
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="colorControlHighlight">@color/ctrlHighlight</item>
+    <item name="colorControlActivated">@color/ctrlActivated</item>
+    </style>
+
+</resources>
